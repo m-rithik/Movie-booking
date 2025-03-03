@@ -1,0 +1,7 @@
+username:admin123
+password:admin123
+role:theater owner
+
+username:user123
+password:user123
+role:user

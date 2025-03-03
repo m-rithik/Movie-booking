@@ -1,0 +1,86 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+header {
+    background: #333;
+    color: white;
+    padding: 1em;
+    text-align: center;
+}
+
+/* Top Navigation Bar */
+#topbar {
+    background: #474747;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 100px; /* Below the header */
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+#nav-menu {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#nav-menu li {
+    padding: 10px 20px;
+}
+
+#nav-menu li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+#nav-menu li a:hover {
+    color: #007BFF;
+}
+
+/* Logout Button */
+#logout-container {
+    margin-left: auto; /* Pushes it to the right */
+}
+
+#logout-btn {
+    padding: 8px 12px;
+    background: #ff0000;
+    color: white;
+    border: none;
+    font-size: 12px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-right: 20px;
+}
+
+#logout-btn:hover {
+    background: #cc0000;
+}
+
+/* Hide elements before login */
+.hidden {
+    display: none;
+}
+
+/* Content Section */
+#content {
+    margin-top: 100px; /* Ensure content is below the navigation bar */
+    padding: 20px;
+}

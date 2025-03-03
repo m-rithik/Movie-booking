@@ -7,32 +7,48 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
- <header>
+
+    <header>
         <h1>Movie Ticket Booking</h1>
-        <nav>
-            <button onclick="showSection('owner')">Owner Actions</button>
-            <button onclick="showSection('user')">User Actions</button>
-        </nav>
     </header>
 
-    <section id="owner" class="hidden">
-        <h2>Owner Actions</h2>
-        <ul>
-            <li><a href="#">Add Movies</a></li>
-            <li><a href="#">Manage Shows</a></li>
-            <li><a href="#">Set Base Prices</a></li>
-            <li><a href="#">View Bookings</a></li>
-        </ul>
-    </section>
-     <section id="user" class="hidden">
-        <h2>User Actions</h2>
-        <ul>
-            <li><a href="#">View Movies</a></li>
-            <li><a href="#">View Shows</a></li>
-            <li><a href="#">Book Tickets</a></li>
-            <li><a href="#">View Past Bookings</a></li>
-        </ul>
-    </section>
+    <!-- Login Form -->
+    <div id="login-container" class="login-container">
+        <h2>Login</h2>
+        <form onsubmit="return loginUser(event)">
+            <input type="text" id="username" placeholder="Username" required>
+            <input type="password" id="password" placeholder="Password" required>
+            <button type="submit">Login</button>
+        </form>
+        <p id="error-message" class="error"></p>
+    </div>
+
+<nav id="topbar" class="hidden">
+    <ul id="nav-menu">
+        <li id="owner-menu" class="hidden"><a href="#">Add Movies</a></li>
+        <li id="owner-menu2" class="hidden"><a href="#">Manage Shows</a></li>
+        <li id="owner-menu3" class="hidden"><a href="#">Set Base Prices</a></li>
+        <li id="owner-menu4" class="hidden"><a href="#">View Bookings</a></li>
+
+
+        <li id="user-menu" class="hidden"><a href="#">View Movies</a></li>
+        <li id="user-menu2" class="hidden"><a href="#">View Shows</a></li>
+        <li id="user-menu3" class="hidden"><a href="#">Book Tickets</a></li>
+        <li id="user-menu4" class="hidden"><a href="#">View Past Bookings</a></li>
+    </ul>
+
+    <div id="logout-container" class="hidden">
+        <button onclick="logout()" id="logout-btn">Logout</button>
+    </div>
+</nav>
+    
+    <div id="main-content" class="hidden">
+        <div id="content">
+            <h2>Welcome to Movie Ticket Booking</h2>
+            
+        </div>
+    </div>
+
     <script src="script.js"></script>
 </body>
 </html>
