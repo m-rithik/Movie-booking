@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Ticket Booking</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+ <header>
+        <h1>Movie Ticket Booking</h1>
+        <nav>
+            <button onclick="showSection('owner')">Owner Actions</button>
+            <button onclick="showSection('user')">User Actions</button>
+        </nav>
+    </header>
+
+    <section id="owner" class="hidden">
+        <h2>Owner Actions</h2>
+        <ul>
+            <li><a href="#">Add Movies</a></li>
+            <li><a href="#">Manage Shows</a></li>
+            <li><a href="#">Set Base Prices</a></li>
+            <li><a href="#">View Bookings</a></li>
+        </ul>
+    </section>
+     <section id="user" class="hidden">
+        <h2>User Actions</h2>
+        <ul>
+            <li><a href="#">View Movies</a></li>
+            <li><a href="#">View Shows</a></li>
+            <li><a href="#">Book Tickets</a></li>
+            <li><a href="#">View Past Bookings</a></li>
+        </ul>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
