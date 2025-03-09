@@ -1,5 +1,5 @@
 // Google client ID (for demo, explicitly included; recommended via backend or environment)
-const GOOGLE_CLIENT_ID = "812207263002-esec40hq8fc3jrknnfsj9mctiehfn0sq.apps.googleusercontent.com";
+const GOOGLE_CLIENT_ID = "781360389440-jedifkqneja7fk3qipp7mumod2q076kj.apps.googleusercontent.com";
 
 // DOM elements
 const form = document.getElementById('authForm');
